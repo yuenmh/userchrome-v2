@@ -1,0 +1,43 @@
+@import url(firefox-csshacks/chrome/hide_tabs_toolbar.css);
+@import url(firefox-csshacks/chrome/window_control_placeholder_support.css);
+@import url(firefox-csshacks/chrome/urlbar_centered_text.css);
+
+/* Hide header above sidebar */
+#sidebar-header {
+  display: none;
+}
+
+/* Hide the thing used to resize the sidebar */
+#sidebar-splitter {
+  width: 4px !important;
+  margin-left: -4px !important;
+  background-color: var(--toolbar-bgcolor) !important;
+  border: none !important;
+}
+
+/* Hide top border above urlbar */
+#nav-bar {
+  border-top: none !important;
+}
+
+/* Hide bottom border below urlbar */
+#navigator-toolbox {
+  border-bottom: none !important;
+}
+
+/* Rounded corners on browser window when not in fullscreen */
+.browserStack {
+  background-color: var(--lwt-accent-color) !important;
+}
+.browserStack > browser {
+  border-radius: 6px !important;
+  margin-right: 5px !important;
+  margin-left: 5px !important;
+  margin-bottom: 5px !important;
+  box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.3);
+}
+[inFullscreen] .browserStack > browser {
+  border-radius: 0px !important;
+  margin: 0px !important;
+  box-shadow: none !important;
+}
