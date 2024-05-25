@@ -15,9 +15,26 @@
   border: none !important;
 }
 
-/* Hide top border above urlbar */
+/* Hide top border above urlbar and rounded corners to match adw theme */
 #nav-bar {
   border-top: none !important;
+  border-radius: 12px;
+}
+
+/* Move menu to the left and other fixes */
+#nav-bar {
+  border-left: 0px;
+  padding-left: 6px !important;
+  display: flex;
+  flex-direction: row-reverse;
+}
+#PanelUI-menu-button {
+  padding: 0px !important;
+}
+
+/* Add right padding to window buttons */
+#toolbar-menubar {
+  padding-right: 6px !important;
 }
 
 /* Hide bottom border below urlbar */
