@@ -1,0 +1,10 @@
+#TabsToolbar {
+  visibility: collapse;
+}
+
+#nav-bar > .titlebar-buttonbox-container {
+  order: -1 !important;
+  display: flex !important;
+  padding-left: 32px;
+  padding-right: 8px;
+}
