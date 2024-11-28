@@ -1,5 +1,6 @@
 @import url(firefox-csshacks/chrome/urlbar_centered_text.css);
 @import url(mods/hide_tabs_bar.css);
+@import url(mods/popup_search.css);
 
 /* Hide header above sidebar */
 #sidebar-header {
@@ -34,6 +35,12 @@
 /* Hide bottom border below urlbar */
 #navigator-toolbox {
   border-bottom: none !important;
+}
+
+/* Remove url bar background when not selected */
+#urlbar:not([breakout][breakout-extend], [breakout][usertyping][focused])
+  > #urlbar-background {
+  background-color: transparent !important;
 }
 
 /* Rounded corners on browser window when not in fullscreen */
